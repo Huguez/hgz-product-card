@@ -13,7 +13,7 @@
   "scripts": {
     "start": "tsdx watch",
     "build": "tsdx build",
-    "test": "tsdx test --passWithNoTests",
+    "test": "tsdx test --passWithNoTests --watch",
     "lint": "tsdx lint",
     "prepare": "tsdx build",
     "size": "size-limit",
@@ -22,6 +22,11 @@
   "peerDependencies": {
     "react": ">=16"
   },
+  "repository": {
+    "url": "https://github.com/Huguez/hgz-product-card",
+    "type": "git"
+  },
+  "homepage": "https://github.com/Huguez/hgz-product-card",
   "husky": {
     "hooks": {
       "pre-commit": "tsdx lint"
@@ -47,18 +52,39 @@
     }
   ],
   "devDependencies": {
+    "@babel/preset-env": "^7.16.11",
+    "@babel/preset-react": "^7.16.7",
     "@rollup/plugin-image": "^2.1.1",
     "@size-limit/preset-small-lib": "^7.0.8",
     "@types/react": "^18.0.1",
     "@types/react-dom": "^18.0.0",
+    "babel-jest": "^27.5.1",
     "husky": "^7.0.4",
+    "identity-obj-proxy": "^3.0.0",
+    "jest": "^27.5.1",
     "postcss": "^8.4.12",
     "react": "^18.0.0",
     "react-dom": "^18.0.0",
+    "react-test-renderer": "^18.0.0",
     "rollup-plugin-postcss": "^4.0.2",
     "size-limit": "^7.0.8",
     "tsdx": "^0.14.1",
     "tslib": "^2.3.1",
     "typescript": "^4.6.3"
-  }
+  },
+  "keywords": [
+    "product",
+    "card",
+    "Huguez"
+  ],
+  "dependencies": {
+    "@types/react-test-renderer": "^17.0.1"
+  },
+  "jest": {
+    "moduleNameMapper": {
+      "\\.(jpg|jpeg|png|gif|eot|otf|webp|svg|ttf|woff|woff2|mp4|webm|wav|mp3|m4a|aac|oga)$": "identity-obj-proxy",
+      "\\.(css|less|scss|sass)$": "identity-obj-proxy"
+    }
+  },
+  "test:watch": "tsdx test --watch"
 }
