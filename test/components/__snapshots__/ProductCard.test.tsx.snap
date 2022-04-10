@@ -1,0 +1,26 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`ProductCard  1`] = `
+<div
+  className="undefined  productCard "
+>
+  <h1>
+    0
+  </h1>
+  <button
+    onClick={[Function]}
+  >
+    +1
+  </button>
+</div>
+`;
+
+exports[`ProductCard Debe de renderizarse 1`] = `
+<div
+  className="undefined  productCard "
+>
+  <h1>
+    Hola wawa
+  </h1>
+</div>
+`;
