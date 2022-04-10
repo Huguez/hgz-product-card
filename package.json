@@ -78,7 +78,8 @@
     "Huguez"
   ],
   "dependencies": {
-    "@types/react-test-renderer": "^17.0.1"
+    "@types/react-test-renderer": "^17.0.1",
+    "yarn": "^1.22.18"
   },
   "jest": {
     "moduleNameMapper": {
