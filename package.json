@@ -78,6 +78,7 @@
     "Huguez"
   ],
   "dependencies": {
+    "@size-limit/esbuild": "^7.0.8",
     "@types/react-test-renderer": "^17.0.1",
     "yarn": "^1.22.18"
   },

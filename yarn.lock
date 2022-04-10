@@ -1466,7 +1466,7 @@
   dependencies:
     "@sinonjs/commons" "^1.7.0"
 
-"@size-limit/esbuild@7.0.8":
+"@size-limit/esbuild@7.0.8", "@size-limit/esbuild@^7.0.8":
   version "7.0.8"
   resolved "https://registry.yarnpkg.com/@size-limit/esbuild/-/esbuild-7.0.8.tgz#1dff3b41ab2c2b5b07ec61a124ecb19aa68661d0"
   integrity sha512-AzCrxJJThDvHrBNoolebYVgXu46c6HuS3fOxoXr3V0YWNM0qz81z5F3j7RruzboZnls8ZgME4WrH6GM5rB9gtA==
